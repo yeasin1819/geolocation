@@ -37,7 +37,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
+  late Position position;
   
  Future getLocation()async{
    try{
@@ -69,13 +69,15 @@ class _MyHomePageState extends State<MyHomePage> {
      
      const Icon(Icons.location_on,size: 100,color: Colors.red,),
      const Text('Get the Location',style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold),),
-     Text(""),
+     
+     
      RaisedButton(onPressed: getLocation,
      child:
       const Text('get location',
       style: TextStyle(color: Colors.white),
       ),
       color: Colors.blue,),
+      Text(position.longitude.toString(),)
     ],
    ),
    ),
