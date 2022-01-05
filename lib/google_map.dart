@@ -1,37 +1,3 @@
-/*import 'package:flutter/material.dart';
-import 'package:geolocator/geolocator.dart';
-import 'package:location_track/google_map.dart';
-import './geolocation.dart';
-
-void main() {
-  runApp(const MyApp());
-  //runApp(MapSample());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Geo Location Tracker',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Geo Location Tracker'),
-          centerTitle: true,
-        ),
-        body: Location(),
-        // body:CurrentLocation(),
-      ),
-    );
-  }
-}
-*/
-
 import 'dart:async';
 
 import 'package:flutter/material.dart';
